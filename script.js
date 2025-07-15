@@ -7,6 +7,10 @@ const content = [
     type: 'image',
     src: 'Images/sdtsem213.webp'
   },
+  {
+    type: 'video',
+    src: 'Videos/STEMIntro.mp4',
+  },
 ];
 
 const container = document.querySelector('.container');
@@ -27,7 +31,7 @@ content.forEach(item => {
   } else if (item.type === 'video') {
     element = document.createElement('video');
     element.src = item.src;
-    element.muted = true; // TikTok-style, always muted
+    element.muted = false; 
     element.playsInline = true;
     element.loop = true;
     element.autoplay = false; // We'll control via Intersection Observer!
