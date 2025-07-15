@@ -91,7 +91,7 @@ function showStoryComplete() {
       <button onclick="startStoryQuiz()" class="quiz-option" style="display:inline-block; margin-top:20px;">Play Again</button>
     </div>
   `;
-  updateProgressBar(1, 1); // Full bar
+  updateProgressBar(1, 1); 
 }
 
 function updateProgressBar(current, total) {

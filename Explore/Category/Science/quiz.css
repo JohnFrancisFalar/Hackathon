@@ -57,3 +57,62 @@
 #next-btn:hover{
     background-color: #5e35b1;
 }
+
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 100;
+  background: #914dd0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.site-header h1 {
+  color: #fff;
+  margin: 0;
+  padding: 16px 0 10px 20px;
+  font-size: 1.3rem;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  background: none; 
+}
+
+
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: none;
+  box-shadow: none;
+  padding: 0 18px 0 0;
+  position: static;
+  gap: 12px;
+  width: auto;
+}
+
+.bottom-nav button {
+  border: none;
+  background: none;
+  font-size: 1.1em;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.bottom-nav button:hover,
+.bottom-nav button:focus {
+  background: #fff2;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 1px; 
+  margin-left: 20px;
+}
