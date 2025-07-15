@@ -35,7 +35,7 @@ content.forEach(item => {
     element.playsInline = true;
     element.loop = true;
     element.autoplay = false; // We'll control via Intersection Observer!
-    element.controls = false;
+    element.controls = true;
   }
   element.className = 'media-element';
 
