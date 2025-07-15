@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="explore.css">
+    <link rel="stylesheet" href="explore_navbar.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore</title>
+</head>
+<body>
+
+    <header class="site-header">
+    <div class="logo-title">
+    <img src="/LogoPics/StemaLogo.png" alt="Stema Logo" class="stema-logo">
+    <h1>ExploreSTEMA</h1>
+  </div>
+    <nav class="bottom-nav">
+    <button onclick="location.href='../index.html'">Feed</button>
+        <button onclick="location.href='/Explore/explore.html'">Explore</button>
+        <button onclick="location.href='../Quest/quest.html'">Quest</button>
+    </nav>
+  </header>
+
+ <div class="category">
+  <!-- Science Branch -->
+  <div class="card">
+    <div class="card-body">
+      <h2 class="subject">Science</h2>
+      <img class="icon" src="../LogoPics/ScienceExplore.png" alt="Science">
+      <p class="context">
+        The systematic study of the natural and physical world through observation and experimentation.
+      </p>
+    </div>
+    <button class="journey-button" onclick="location.href='Category/Science/difficulty.html'">Start Journey</button>
+  </div>
+
+  <!-- Technology Branch -->
+  <div class="card">
+    <div class="card-body">
+      <h2 class="subject">Technology</h2>
+      <img class="icon" src="../LogoPics/TechnologyExplore.png" alt="Technology">
+      <p class="context">
+        The practical application of scientific knowledge and the development of new technologies.
+      </p>
+    </div>
+    <button class="journey-button" onclick="location.href='Category/Technology.html'">Start Journey</button>
+  </div>
+
+  <!-- Engineering Branch -->
+  <div class="card">
+    <div class="card-body">
+      <h2 class="subject">Engineering</h2>
+      <img class="icon" src="../LogoPics/EngineeringExplore.png" alt="Engineering">
+      <p class="context">
+        It involves using science and math to design, build, and improve systems, structures, and technologies.
+      </p>
+    </div>
+    <button class="journey-button" onclick="location.href='Category/Engineering.html'">Start Journey</button>
+  </div>
+
+  <!-- Math Branch -->
+  <div class="card">
+    <div class="card-body">
+      <h2 class="subject">Mathematics</h2>
+      <img class="icon" src="../LogoPics/MathExplore.png" alt="Math">
+      <p class="context">
+        The foundational language and tool for understanding and manipulating the world, from the smallest particles to the largest structures.
+      </p>
+    </div>
+    <button class="journey-button" onclick="location.href='Category/Math.html'">Start Journey</button>
+  </div>
+</div>
+
+<link href="../chatbot/Chatbot2.css" rel="stylesheet" />
+<script type="module">
+	import { createChat } from '../chatbot/Chatbot.js';
+
+	createChat({
+		webhookUrl: 'https://n8n.srv906185.hstgr.cloud/webhook/58598dc7-93aa-46f9-b5d9-4b2657025500/chat'
+	});
+</script>
+
+    
+</body>
+</html>

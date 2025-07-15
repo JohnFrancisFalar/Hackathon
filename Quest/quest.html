@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+     <title>Story Quiz</title>
+     <link rel="stylesheet" href="quest.css" />
+     <link rel="stylesheet" href="Quest_navbar.css" />
+
+    </head>
+<body>
+  <header class="site-header">
+    <div class="logo-title">
+    <img src="/LogoPics/StemaLogo.png" alt="Stema Logo" class="stema-logo">
+    <h1>STEMA</h1>
+  </div>
+    <nav class="bottom-nav">
+    <button onclick="location.href='../index.html'">Feed</button>
+        <button onclick="location.href='../Explore/explore.html'">Explore</button>
+        <button onclick="location.href='/Quest/quest.html'">Quest</button>
+    </nav>
+  </header>
+  
+  <div class="story-quiz-container">
+    <div class="story-container">
+  <h1 id="storyTitle">Story Quiz</h1>
+        <div id="storyContent"></div>
+        <div id="storyProgressBar"><div id="storyProgress"></div></div>
+        </div>
+</div>
+
+
+<link href="../chatbot/Chatbot2.css" rel="stylesheet" />
+<script type="module">
+	import { createChat } from '../chatbot/Chatbot.js';
+
+	createChat({
+		webhookUrl: 'https://n8n.srv906185.hstgr.cloud/webhook/58598dc7-93aa-46f9-b5d9-4b2657025500/chat'
+	});
+</script>
+
+<script src="script.js"></script>
+
+  <script src="quest.js"></script>
+
+</body>
+</html>

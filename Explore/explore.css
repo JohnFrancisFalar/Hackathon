@@ -1,0 +1,152 @@
+
+.icon{
+    width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.category {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 30px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+
+.card-body{
+    text-align: center;
+}
+
+
+/* ................................................................... */
+
+body {
+  background: #1e2633;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+
+}
+
+.category {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+  padding: 44px 2vw 44px 2vw;
+  box-sizing: border-box;
+}
+
+.card {
+  background: #fcfcfd;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px #1e263333, 0 1.5px 5px #29436708;
+  border: 1.5px solid #e8eaf3;
+  min-width: 250px;
+  width: 320px;
+  max-width: 90vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 18px 0;
+  transition: transform 0.16s, box-shadow 0.16s;
+  margin-top: 50px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 32px #1e263355, 0 1.5px 5px #29436711;
+  transform: translateY(-4px) scale(1.025);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 26px 18px 12px 18px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.subject {
+  font-size: 1.4em;
+  color: #294367;
+  font-weight: 600;
+  margin-bottom: 9px;
+  margin-top: 0;
+  letter-spacing: 1px;
+}
+
+.icon {
+  width: 74px;
+  height: 74px;
+  object-fit: contain;
+  margin-bottom: 16px;
+  background: #eaf2fc;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px #6276b533;
+}
+
+.context {
+  font-size: 1.08em;
+  color: #43527a;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.journey-button {
+  margin-top: 17px;
+  background: #914dd0;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.05em;
+  border: none;
+  border-radius: 9px;
+  padding: 11px 36px;
+  cursor: pointer;
+  transition: background 0.17s, transform 0.13s, box-shadow 0.13s;
+  box-shadow: 0 2px 10px #29436721;
+  letter-spacing: 0.5px;
+}
+
+.journey-button:hover,
+.journey-button:focus {
+  background: #914dd0;
+  transform: scale(1.04);
+  outline: none;
+}
+
+@media (max-width: 900px) {
+  .category {
+    gap: 22px;
+  }
+  .card {
+    width: 85vw;
+    min-width: 220px;
+  }
+}
+
+@media (max-width: 600px) {
+  .category {
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    padding: 28px 2vw 28px 2vw;
+  }
+  .card {
+    width: 97vw;
+    min-width: auto;
+    max-width: 98vw;
+    padding: 0 0 12px 0;
+  }
+  .card-body {
+    padding: 18px 10px 10px 10px;
+  }
+}
